@@ -1,0 +1,17 @@
+﻿@model DZ_30_03_21.ViewModels.CategoryViewModel
+
+@{
+    ViewData["Title"] = "Изменение категории";
+}
+
+<form action="Edit" method="post">
+    <div asp-validation-summary="All" class="text-danger"></div>
+    <input type="hidden" asp asp-for="Id">
+    <div class="input-group row">
+        <label class="col-md-2 form-control" asp-for="Name"></label>
+        <input class="form-control col-md-4"  asp-for="Name" required/>
+    </div>
+    <div class="input-group row">
+        <input type="submit" class="btn btn-success" value="Изменить"/>
+    </div>
+</form>

@@ -1,0 +1,27 @@
+﻿@model DZ_30_03_21.ViewModels.ProductViewModel
+
+@{
+    ViewData["Title"] = "Изменение продукта";
+}
+
+<form action="Edit" method="post">
+    <div asp-validation-summary="All" class="text-danger  mb-1"></div>
+    <div class="input-group row mb-1">
+        <label class="col-md-2 form-control" asp-for="Name"></label>
+        <input class="form-control col-md-4" asp-for="Name" required />
+    </div>
+    <div class="input-group row mb-1">
+        <label class="col-md-2 form-control" asp-for="Price"></label>
+        <input class="form-control col-md-4" asp-for="Price" required />
+    </div>
+
+    <div class="input-group row mb-1">
+        <label class="col-md-2 form-control" asp-for="CategoryId"></label>
+        <select class="form-control col-md-4" asp-for="CategoryId" asp-items="@Model.Categories">
+        </select>
+    </div>
+
+    <div class="input-group row mb-1">
+        <input type="submit" class="btn btn-success" style="float:right" value="Добавить" />
+    </div>
+</form>
