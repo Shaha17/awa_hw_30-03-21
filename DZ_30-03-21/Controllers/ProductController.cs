@@ -28,7 +28,6 @@ namespace DZ_30_03_21.Controllers
 		[HttpGet]
 		public async Task<IActionResult> Index(string category)
 		{
-			System.Console.WriteLine(category);
 			List<Product> lst = new List<Product>();
 			if (category == null)
 			{

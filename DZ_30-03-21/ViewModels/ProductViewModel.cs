@@ -18,8 +18,9 @@ namespace DZ_30_03_21.ViewModels
 		[Display(Name = "Цена")]
 		public decimal Price { get; set; }
 		[Required(ErrorMessage = "Ошибка в категории")]
-		public int CategoryId { get; set; }
 		[Display(Name = "Категория")]
+		public int CategoryId { get; set; }
+		// [Display(Name = "Категория")]
 		public List<SelectListItem> Categories { get; set; } = new List<SelectListItem>();
 	}
 }

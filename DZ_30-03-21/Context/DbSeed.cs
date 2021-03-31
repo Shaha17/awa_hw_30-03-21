@@ -22,9 +22,6 @@ namespace DZ_30_03_21.Context
 			}
 			if (!context.Products.Any())
 			{
-                System.Console.WriteLine(context.Categories.Where(p=>p.Name=="Фрукты").FirstOrDefault().Id);
-                System.Console.WriteLine(context.Categories.Where(p=>p.Name=="Овощи").FirstOrDefault().Id);
-                System.Console.WriteLine(context.Categories.Where(p=>p.Name=="Зелень").FirstOrDefault().Id);
 				context.Products.Add(new Product()
 				{
 					Name = "Банан",

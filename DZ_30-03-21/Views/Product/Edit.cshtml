@@ -4,6 +4,7 @@
     ViewData["Title"] = "Изменение продукта";
 }
 
+
 <form action="Edit" method="post">
     <div asp-validation-summary="All" class="text-danger  mb-1"></div>
     <div class="input-group row mb-1">
@@ -11,7 +12,7 @@
         <input class="form-control col-md-4" asp-for="Name" required />
     </div>
     <div class="input-group row mb-1">
-        <label class="col-md-2 form-control" asp-for="Price"></label>
+        <label style="" class="col-md-2 form-control" asp-for="Price"></label>
         <input class="form-control col-md-4" asp-for="Price" required />
     </div>
 
